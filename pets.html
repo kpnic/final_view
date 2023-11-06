@@ -21,7 +21,7 @@
             <li id ="#head"><a href = "index.html">Home/Travel</a></li>
             <li id ="#head"><a href = "recipe.html">Recipes</a></li>
             <div class="dropdown">
-                <button class="pets">Pets<a href = "pets.html"></a></button>
+                <button class="active">Pets<a href = "pets.html"></a></button>
                 <div class="dropdown-content">
                     <a href="#bacon">Bacon Q Dog</a>
                     <a href="#luna">Luna the Chocolate Lab</a>
@@ -34,6 +34,7 @@
               </div>
         </ul>
     </nav>
+    <button type = "button" onclick="topScroll()" id = "scrollButton" title = "Scroll to Top">Back to Top</button>
     <header> <h1>Pets</h1></header>
     <main id = "main">
         <div id = "bacon">
@@ -222,5 +223,14 @@
         </div>
 
     </main>
+    <script>
+        let myButton = document.querySelector("#scrollButton");
+
+        function topScroll(){
+            console.log('top!');
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 </html>

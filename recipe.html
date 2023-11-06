@@ -18,7 +18,7 @@
         <ul>
             <li id ="#head"><a href = "index.html">Home/Travel</a></li>
             <div class="dropdown">
-                <button class="recipe">Recipes<a href = "recipe.html"></a></button>
+                <button class="active">Recipes<a href = "recipe.html"></a></button>
                 <div class="dropdown-content">
                     <a href="#cookies">Double Chocolate Cookies</a>
                     <a href="#matcha">Matcha Cookies</a>
@@ -29,6 +29,7 @@
             <li id ="#head"><a href = "pets.html">Pets</a></li>
         </ul>
     </nav>
+    <button type = "button" onclick="topScroll()" id = "scrollButton" title = "Scroll to Top">Back to Top</button>
     <header> <h1>Recipes</h1></header>
     <main id = "main">
     <div id = "cookies">
@@ -225,6 +226,23 @@
 
     </div>
     </main>
+    <script>
+        let myButton = document.querySelector("#scrollButton");
+
+        function topScroll(){
+            console.log('top!');
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        let recipesLink = document.querySelector("#head a[href='recipe.html']");
+
+        // Check if the current page's URL matches the Recipes page
+        if (window.location.href.endsWith("/recipe.html")) {
+        // If it matches, add a class to make it appear in focus
+        recipesLink.classList.add("active");
+        }
+    </script>
     
 </body>
 </html>

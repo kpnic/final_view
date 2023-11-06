@@ -51,7 +51,7 @@ ul {
 nav a{
     padding: 5px;
     margin: 20px;
-    background-color: #e6becc;
+    /* background-color: #e6becc; */
     border-radius: 5px;
     display: block;
 }
@@ -146,6 +146,16 @@ nav a:hover, nav a:focus, .active{
     grid-row: 2/3;
 }
 
+#scrollButton{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
 @keyframes likes {
     from {background-color:  #e6e2d5;}
     to {background-color: #ad8e99;}
@@ -215,6 +225,9 @@ h2 {
         margin-left: 10px;
         margin-right: auto;
     }
+    .photoGallery img, .photoGallery video{
+        transition: none;
+    }
 
 }
 
@@ -226,7 +239,7 @@ h2 {
     }
     
     nav a { 
-        background-color: #e6becc;
+        /* background-color: #e6becc; */
         border-radius: 5px;
         display: inline;
     }
@@ -241,7 +254,7 @@ h2 {
     }
 
     button{
-        background-color: #e6becc;
+        background-color: #ad8e99;
         color: #474747;
         font-family: 'Oswald', sans-serif;
         font-size: 30px;
@@ -292,6 +305,19 @@ h2 {
       .dropdown:hover .dropbtn {
         background-color: #ad8e99;
     } 
-    
+
+    .photoGallery {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .photoGallery img, .photoGallery video {
+        width: 200px;
+        transition: transform 0.3s; 
+    }
+
+    .photoGallery img:hover, .photoGallery video:hover {
+        transform: scale(1.4); 
+    }
     
 }
