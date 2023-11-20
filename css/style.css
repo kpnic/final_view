@@ -29,6 +29,7 @@ img {
     margin: auto;
     border-radius: 30px;
     width: 95%;
+    border: solid white 3px;
 }
 
 video {
@@ -70,13 +71,12 @@ nav a{
     padding: 10px;
     margin: auto;
     border-radius: 30px;
-    width: 95%;
+    width: 250px;
 }
 
 .photoGallery{
     display: grid;
     grid-template-columns: 1fr 1fr;
-
 }
 
 ul.petLikes li {
@@ -99,7 +99,7 @@ nav a:hover, nav a:focus, .active{
 }
 
 .recipeSteps li{
-    display: inline-block;
+    display: list-item;
     text-decoration: none;
     font-size: 15px;
 }
@@ -190,6 +190,12 @@ h2 {
     }
     .gif {
         display: none;
+    }
+    .titleTravel, .titlePet, .titleRecipe{
+        background-attachment: initial;
+    }
+    img{
+        animation: none;
     }
 }
 
@@ -317,7 +323,316 @@ h2 {
     }
 
     .photoGallery img:hover, .photoGallery video:hover {
-        transform: scale(1.4); 
+        transform: scale(1.3); 
     }
-    
+
+    img{
+        width: 200px;
+        transition: transform 0.3s; 
+    }
+
+    img:hover{
+        transform: scale(1.3); 
+        margin-left: 50px;
+    }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .gallery video{
+        width: 150px;
+    }
+}
+
+@media (min-width: 992px) {
+    .titleTravel{
+        background-image: url("/images/worldMap.jpg");
+        min-height: 300px;
+        background-attachment: fixed; /* Parallax effect */     
+        background-position: center;  /* Parallax effect */
+        background-repeat: no-repeat; /* Parallax effect */
+        background-size: cover;       /* Parallax effect */
+    }
+    .titleRecipe{
+        background-image: url("/images/foodBackground.jpg");
+        min-height: 300px;
+        background-attachment: fixed; /* Parallax effect */     
+        background-position: center;  /* Parallax effect */
+        background-repeat: no-repeat; /* Parallax effect */
+        background-size: cover;       /* Parallax effect */
+    }
+    .titlePet{
+        background-image: url("/images/petBackground.jpg");
+        min-height: 300px;
+        background-attachment: fixed; /* Parallax effect */     
+        background-position: center;  /* Parallax effect */
+        background-repeat: no-repeat; /* Parallax effect */
+        background-size: cover;       /* Parallax effect */
+    }
+
+    /* The animation code */
+  @keyframes border {
+    from {border-color: white;}
+    to {background-color: #b07777;}
+  }
+  
+  /* The element to apply the animation to */
+  img {
+    animation-name: border;
+    animation-duration: 4s;
+  }
+  #main #cookies{
+    display: grid;
+    grid-template-columns: 60%, 40%;
+    grid-template-rows: auto, auto, auto, auto, auto, auto, auto, auto, auto;
+  }
+  #main #cookies .headerImg{
+    grid-column: 1/2;
+    width: 75%;
+  }
+
+  #main #cookies p{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    width: 70%;
+  }
+  #main #cookies span{
+    grid-column: 1/2;
+  }
+  #main #cookies #ingredients{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-right: auto;
+  }
+  #main #cookies ul{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-top: 50px;
+  }
+  #main #cookies #steps{
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  #main #cookies ol{
+    grid-column: 1/2;
+    display: list-item;
+  }
+  #main #cookies #add{
+    grid-column: 1/3;
+    /* grid-row: 8/9; */
+  }
+  #main #cookies h2{
+    grid-column: 1/2;
+  }
+  
+
+  #main #matcha{
+    display: grid;
+    grid-template-columns: 60%, 40%;
+    grid-template-rows: auto, auto, auto, auto, auto, auto, auto, auto, auto;
+  }
+  #main #matcha .headerImg{
+    grid-column: 1/2;
+    width: 75%;
+  }
+
+  #main #matcha p{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    width: 70%;
+  }
+  #main #matcha span{
+    grid-column: 1/2;
+  }
+  #main #matcha #ingredients{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-right: auto;
+  }
+  #main #matcha ul{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-top: 50px;
+  }
+  #main #matcha #steps{
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  #main #matcha ol{
+    grid-column: 1/2;
+    display: list-item;
+  }
+  #main #matcha #add{
+    grid-column: 1/3;
+    /* grid-row: 8/9; */
+  }
+  #main #matcha h2{
+    grid-column: 1/2;
+  }
+
+
+  #main #brownie{
+    display: grid;
+    grid-template-columns: 60%, 40%;
+    grid-template-rows: auto, auto, auto, auto, auto, auto, auto, auto, auto;
+  }
+  #main #brownie .headerImg{
+    grid-column: 1/2;
+    width: 75%;
+  }
+
+  #main #brownie p{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    width: 70%;
+  }
+  #main #brownie span{
+    grid-column: 1/2;
+  }
+  #main #brownie #ingredients{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-right: auto;
+  }
+  #main #brownie ul{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-top: 50px;
+  }
+  #main #brownie #steps{
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  #main #brownie ol{
+    grid-column: 1/2;
+    display: list-item;
+  }
+  #main #brownie #add{
+    grid-column: 1/3;
+    /* grid-row: 8/9; */
+  }
+  #main #brownie h2{
+    grid-column: 1/2;
+  }
+
+
+  #main #tikka{
+    display: grid;
+    grid-template-columns: 60%, 40%;
+    grid-template-rows: auto, auto, auto, auto, auto, auto, auto, auto, auto;
+  }
+  #main #tikka .headerImg{
+    grid-column: 1/2;
+    width: 50%;
+  }
+
+  #main #tikka p{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    width: 70%;
+  }
+  #main #tikka span{
+    grid-column: 1/2;
+  }
+  #main #tikka #ingredients{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-right: auto;
+  }
+  #main #tikka ul{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-top: 50px;
+  }
+  #main #tikka #steps{
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  #main #tikka ol{
+    grid-column: 1/2;
+    display: list-item;
+  }
+  #main #tikka #add{
+    grid-column: 1/3;
+    /* grid-row: 8/9; */
+  }
+  #main #tikka h2{
+    grid-column: 1/2;
+  }
+
+  #main #cont{
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: auto, auto;
+  }
+
+  #main #cont h2{
+    grid-column: 1/-1;
+  }
+  #main #cont img{
+    grid-column: 1/2;
+    width: 350px;
+  }
+  
+  #main #cont #p1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+  }
+
+  .gallery #i1 #c1{
+    grid-column: 1/2;
+  }
+
+  .gallery #i2 #c2{
+    grid-column: 2/3;
+  }
+
+  .gallery #i3 #c3{
+    grid-column: 3/4;
+  }
+
+  .gallery #i4 #c4{
+    grid-column: 4/5;
+  }
+
+  .gallery #i5 #c5{
+    grid-column: 5/6;
+  }
+
+  .gallery video{
+    width: 200px;
+  }
+
+  .popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #e0c5c5;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 }
