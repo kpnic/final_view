@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="images/iconImg.png" />
+    <link rel="icon" type="image/png" href="images/iconImg.png">
     <script src="https://kit.fontawesome.com/5dd540290c.js" crossorigin="anonymous"></script>
 </head> 
 
@@ -20,21 +20,23 @@
     <a href = "#main" id = "skip">  Skip to Main Content</a>
     <header>
     <nav>
-        <ul>
+        <div class="navbar">
             <div class="dropdown">
-                <button class="active">Home/Travel<a href = "index.html"></a></button>
-                <div class="dropdown-content">
+                <button class="active" onclick="myFunction()">Home/Travel
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
                     <a href="#athens">Athens, GA</a>
                     <a href="#seattle">Seattle, WA</a>
                     <a href="#yellowstone">Yellowstone</a>
                     <a href="#dubai">Dubai</a>
                     <a href="#palo">Palo Alto</a>
                     <a href="#rome">Rome, Italy</a>
-                </div>
-              </div>
-            <li id ="#head"><a href = "recipe.html">Recipes</a></li>
-            <li id ="#head"><a href = "pets.html">Pets</a></li>
-        </ul>
+            </div>
+            </div> 
+            <a href="pets.html">Pets</a>
+            <a href="recipe.html">Recipes</a>
+        </div>
     </nav>
     </header>
     <button type = "button" onclick="topScroll()" id = "scrollButton" title = "Scroll to Top">Back to Top <i class='far fa-arrow-alt-circle-up'></i></button>
@@ -57,28 +59,28 @@
             <h2>Photo Gallery</h2>
             <div class = "gallery">
                 <figure>
-                    <img src = "images/georgiaTheatre.jpg" alt ="The outside of the Georgia Theatre" id = "i1">
-                    <figcaption id = "c1">The Georgia Theatre is a live music venue space in Athens, which also has a roof-top bar.</figcaption>
+                    <img src = "images/georgiaTheatre.jpg" alt ="The outside of the Georgia Theatre" class = "i1">
+                    <figcaption class = "c1">The Georgia Theatre is a live music venue space in Athens, which also has a roof-top bar.</figcaption>
                 </figure>
 
                 <figure>
-                    <img src = "images/downtown_athens.jpg" alt ="The downtown Athens as seen from a birds-eye view" id = "i2">
-                    <figcaption id = "c2">Downtown is one of the most popular areas in Athens, as it contains many restaurants, bars, and shops for people visiting.</figcaption>
+                    <img src = "images/downtown_athens.jpg" alt ="The downtown Athens as seen from a birds-eye view" class = "i2">
+                    <figcaption class = "c2">Downtown is one of the most popular areas in Athens, as it contains many restaurants, bars, and shops for people visiting.</figcaption>
                 </figure>
                 
                 <figure>
-                    <img src = "images/greenway.jpg" alt ="The entrance to the river view greenway" id = "i3">
-                    <figcaption id = "c3">The greenway is a set of paved paths and hiking trails located along the Oconee River that is great for walking, running, and even biking.</figcaption>
+                    <img src = "images/greenway.jpg" alt ="The entrance to the river view greenway" class = "i3">
+                    <figcaption class = "c3">The greenway is a set of paved paths and hiking trails located along the Oconee River that is great for walking, running, and even biking.</figcaption>
                 </figure>    
 
                 <figure>
-                    <img src = "images/normalTown.jpg" alt ="The normal town shops from a street view" id = "i5">
-                    <figcaption id = "c4">Normal town is another section of Athens, which is known to be more hippie and casual. You would likely find residents located in Normal town over tourists.</figcaption>
+                    <img src = "images/normalTown.jpg" alt ="The normal town shops from a street view" class = "i5">
+                    <figcaption class = "c4">Normal town is another section of Athens, which is known to be more hippie and casual. You would likely find residents located in Normal town over tourists.</figcaption>
                 </figure>    
 
                 <figure>
-                    <img src = "images/fivePoints.jpg" alt ="The Five Points intersection as seen from above" id = "i6">
-                    <figcaption id = "c5">Five Points is a five-way intersection located in a residential part of Athens. Nearby you can find sorority row for UGA, many houses, and a local high school.</figcaption>
+                    <img src = "images/fivePoints.jpg" alt ="The Five Points intersection as seen from above" class = "i6">
+                    <figcaption class = "c5">Five Points is a five-way intersection located in a residential part of Athens. Nearby you can find sorority row for UGA, many houses, and a local high school.</figcaption>
                 </figure>
             
             </div>
@@ -95,34 +97,34 @@
             <div class = "gallery">
                 <figure>
                             
-                    <img id = "i1"src="images/SeattlePrimaryImage.jpg" width="200" alt="The Ferris wheel in the summer in Seattle zoomed in next to the Space needle taken from a ferry boat."> 
-                    <figcaption id = "c1"> 
+                    <img class= "i1"src="images/SeattlePrimaryImage.jpg" width="200" alt="The Ferris wheel in the summer in Seattle zoomed in next to the Space needle taken from a ferry boat."> 
+                    <figcaption class= "c1"> 
                     One of Seattle's most popular monuments, The Great Wheel, taken by ferry boat with views of the Space needle as well.</figcaption>
                 </figure>
 
 
                 <figure>
-                    <img id = "i2" src="images/SeattleImage1.jpg" width="200" alt="Mount Rainier taken in the evening with a pink sunset.">
+                    <img class= "i2" src="images/SeattleImage1.jpg" width="200" alt="Mount Rainier taken in the evening with a pink sunset.">
                 
-                    <figcaption id = "c2">The beautiful mount rainier in Seattle during Sunset. </figcaption>
+                    <figcaption class= "c2">The beautiful mount rainier in Seattle during Sunset. </figcaption>
                 </figure>
 
                 <figure>
-                    <img id = "i3" src="images/SeattleImage2.jpg" width="200" alt="The big, red Pike Place Market sign taken from the streets.">
+                    <img class= "i3" src="images/SeattleImage2.jpg" width="200" alt="The big, red Pike Place Market sign taken from the streets.">
                 
-                    <figcaption id = "c3"> The famous Pike Place market sig. </figcaption>
+                    <figcaption class= "c3"> The famous Pike Place market sig. </figcaption>
                 </figure>
 
                 <figure>
 
-                    <img id = "i4" src="images/SeattleImage3.jpg" width="200" alt="Looking out into the grass at the University of Washington campus diag during the peak season of the cherry blossoms.">
+                    <img class= "i4" src="images/SeattleImage3.jpg" width="200" alt="Looking out into the grass at the University of Washington campus diag during the peak season of the cherry blossoms.">
                 
-                    <figcaption id = "c4">University of Washington's cherry blossoms blooming in their quadrangle. </figcaption>
+                    <figcaption class= "c4">University of Washington's cherry blossoms blooming in their quadrangle. </figcaption>
                 </figure>
 
                 <figure>
-                    <img id = "i5" src="images/SeattleImage4.jpg" width="200" alt=" A view of the Seattle skylines lit up at night taken from a high building">
-                    <figcaption id = "c5">
+                    <img class= "i5" src="images/SeattleImage4.jpg" width="200" alt=" A view of the Seattle skylines lit up at night taken from a high building">
+                    <figcaption class= "c5">
                         The Seattle skylines lit up at night, featuring the newly built, zero carbon emission hockey arena.</figcaption>
                 </figure>
 
@@ -144,37 +146,37 @@
             <h3>Photo Gallery</h3>
             <div class = "gallery">
                 <figure>
-                    <img id = "i1" src="images/yellowstone_travertine.JPG" width = "200" alt="A large mound of multi-colored travertine">
-                    <figcaption id = "c1">Mammoth Hot Springs has a number of actively forming Travertine terraces.</figcaption>
+                    <img class= "i1" src="images/yellowstone_travertine.JPG" width = "200" alt="A large mound of multi-colored travertine">
+                    <figcaption class= "c1">Mammoth Hot Springs has a number of actively forming Travertine terraces.</figcaption>
                 </figure>
 
                 <figure>
-                    <img id = "i2" src="images/yellowstone_sunset.jpg" width = "200" alt="Sunset over mountains with some charred trees in the foreground">
-                    <figcaption id = "c2">The drive to Lamar Valley requires some dangerous roads.  But the result is amazing sunset views.</figcaption>
+                    <img class= "i2" src="images/yellowstone_sunset.jpg" width = "200" alt="Sunset over mountains with some charred trees in the foreground">
+                    <figcaption class= "c2">The drive to Lamar Valley requires some dangerous roads.  But the result is amazing sunset views.</figcaption>
                 </figure>
 
 
                 <figure>
-                    <video id = "i3" width="200"  controls>
+                    <video class= "i3" width="200"  controls>
                         <source src="images/yellowstone_prism.MOV">
                         Your browser does not support the video tag.
                     </video>
-                    <figcaption id = "c3">The multicolored layers get their hues from different species of bacteria living in the cooler water around the spring.</figcaption>
+                    <figcaption class= "c3">The multicolored layers get their hues from different species of bacteria living in the cooler water around the spring.</figcaption>
                 </figure>
 
 
                 <figure>
-                    <video id = "i4" width="200"  controls>
+                    <video class= "i4" width="200"  controls>
                         <source src="images/yellowstone_buffalo.MOV">
                         Your browser does not support the video tag.
                     </video>
-                    <figcaption id = "c4">The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't lickin the car, we aren't stopping."</figcaption>
+                    <figcaption class= "c4">The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't lickin the car, we aren't stopping."</figcaption>
                 </figure>
 
                 <figure>
-                    <img id = "i5" src="images/yellowstone_sulphur_springs.JPG" width = "200" alt="A large spring with clouds of sulfur smoke rising from it.">
+                    <img class= "i5" src="images/yellowstone_sulphur_springs.JPG" width = "200" alt="A large spring with clouds of sulfur smoke rising from it.">
                     
-                    <figcaption id = "c5">If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.</figcaption>
+                    <figcaption class= "c5">If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.</figcaption>
                 </figure> 
             </div>
             <!--Colleen van Lent -->
@@ -196,31 +198,31 @@
             <h3>Photo Gallery </h3>
             <div class = "gallery">
                 <figure>
-                    <img id = "i1" src="images/dubai_burjkhalifa.webp" width = "200" alt="A tall building that dwarfs its surroundings">    
-                    <figcaption id = "c1">Reaching into the clouds, witness the tallest building in the world the Burj Khalifa.</figcaption>
+                    <img class= "i1" src="images/dubai_burjkhalifa.webp" width = "200" alt="A tall building that dwarfs its surroundings">    
+                    <figcaption class= "c1">Reaching into the clouds, witness the tallest building in the world the Burj Khalifa.</figcaption>
                 </figure>
                 
                 
                 <figure>
-                    <img id = "i2" src="images/dubai_burjalarab.webp" width = "200" alt=" A building shaped like a sail of a ship just off the coastline">
-                    <figcaption id = "c2">Located just off the coastline, the Burj Al Arab boasts a unique design and world-class service.</figcaption>
+                    <img class= "i2" src="images/dubai_burjalarab.webp" width = "200" alt=" A building shaped like a sail of a ship just off the coastline">
+                    <figcaption class= "c2">Located just off the coastline, the Burj Al Arab boasts a unique design and world-class service.</figcaption>
                 </figure>
                 
                 
                 <figure>
-                    <img id = "i3" src="images/dubai_mall.jpg" width = "200" alt="A building with intricate detail adjacent to the Burj Khalifa.">
-                    <figcaption id = "c3">Nestled in the heart of downtown Dubai, the Dubai Mall offers a wide range of experiences from shopping, dining, and entertainment.</figcaption>
+                    <img class= "i3" src="images/dubai_mall.jpg" width = "200" alt="A building with intricate detail adjacent to the Burj Khalifa.">
+                    <figcaption class= "c3">Nestled in the heart of downtown Dubai, the Dubai Mall offers a wide range of experiences from shopping, dining, and entertainment.</figcaption>
                 </figure>
                 
                 
                 <figure>
-                    <img id = "i4" src="images/dubai_palmislands.webp" width = "200" alt="A cluster of islands in the shape of a palm tree">
-                    <figcaption id = "c4" >An engineering marvel, the palm islands are shaped like a palm tree and provides an additional area for tourists.</figcaption>
+                    <img class= "i4" src="images/dubai_palmislands.webp" width = "200" alt="A cluster of islands in the shape of a palm tree">
+                    <figcaption class= "c4" >An engineering marvel, the palm islands are shaped like a palm tree and provides an additional area for tourists.</figcaption>
                 </figure>
                 
                 <figure>
-                    <img id = "i5" src="images/dubai_ski.jpg" width = "200" alt="An indoor ski resort with skiers skiing through the snow">
-                    <figcaption id = "c5">A snowy escape, Ski Dubai offers an indoor winter retreat from the harsh desert heat.</figcaption>
+                    <img class= "i5" src="images/dubai_ski.jpg" width = "200" alt="An indoor ski resort with skiers skiing through the snow">
+                    <figcaption class= "c5">A snowy escape, Ski Dubai offers an indoor winter retreat from the harsh desert heat.</figcaption>
                 </figure>
             </div>
             
@@ -243,32 +245,32 @@
             <h3>Photo Gallery</h3>
             <div class = "gallery">
                 <figure>
-                    <img id = "i1" src="images/paloalto_market.JPG" width = "200" alt="The Sunday farmers market on California Ave">
-                    <figcaption id = "c1">The farmers market is the place to buy fresh fruits and vegetables and people watch
+                    <img class= "i1" src="images/paloalto_market.JPG" width = "200" alt="The Sunday farmers market on California Ave">
+                    <figcaption class= "c1">The farmers market is the place to buy fresh fruits and vegetables and people watch
                     </figcaption>
                 </figure>
 
                 <figure>
-                    <img id = "i2" src="images/paloalto_pickleball.JPG" width = "200" alt="Pickleball courts at Mitchell Park">
-                    <figcaption id = "c2">Pickleball is a rapidly growing sport popular in Palo Alto</figcaption>
+                    <img class= "i2" src="images/paloalto_pickleball.JPG" width = "200" alt="Pickleball courts at Mitchell Park">
+                    <figcaption class= "c2">Pickleball is a rapidly growing sport popular in Palo Alto</figcaption>
                 </figure>
 
 
                 <figure>
-                    <img id = "i3" src="images/paloalto_bike.JPG" width = "200" alt="Girl biking on a street">
-                    <figcaption id = "c3">Biking is a great way to get around town</figcaption>
+                    <img class= "i3" src="images/paloalto_bike.JPG" width = "200" alt="Girl biking on a street">
+                    <figcaption class= "c3">Biking is a great way to get around town</figcaption>
                 </figure>
 
 
                 <figure>
-                    <img id = "i4" src="images/paloalto_baylands.JPG" width = "200" alt="Flowers at Baylands Nature Preserve">
-                    <figcaption id = "c4">Baylands is very pretty especially in the spring</figcaption>
+                    <img class= "i4" src="images/paloalto_baylands.JPG" width = "200" alt="Flowers at Baylands Nature Preserve">
+                    <figcaption class= "c4">Baylands is very pretty especially in the spring</figcaption>
                 </figure>
 
                 <figure>
-                    <img id = "i5" src="images/paloalto_foothills.JPG" width = "200" alt="Lake at Foothills Park">
+                    <img class= "i5" src="images/paloalto_foothills.JPG" width = "200" alt="Lake at Foothills Park">
                     
-                    <figcaption id = "c5">The lake at Foothills is great for kayaking or canoeing </figcaption>
+                    <figcaption class= "c5">The lake at Foothills is great for kayaking or canoeing </figcaption>
                 </figure>
             </div>
             <!-- Agnes Mar --> 
@@ -294,29 +296,29 @@
                 <h3>Photo Gallery</h3>
                 <div class = "gallery">
                     <figure>
-                        <img id = "i1" src = "images/rome_map.jpeg" width = "200" alt = "Simple depiction of the location of Rome within Italy.">
-                        <figcaption id = "c1">Rome is located in the western-central region of Italy, about 15 miles inland from the neighboring Tyrrhenian Sea. https://stock.adobe.com/search?k=%22rome+map%22 </figcaption>
+                        <img class= "i1" src = "images/rome_map.jpeg" width = "200" alt = "Simple depiction of the location of Rome within Italy.">
+                        <figcaption class= "c1">Rome is located in the western-central region of Italy, about 15 miles inland from the neighboring Tyrrhenian Sea. https://stock.adobe.com/search?k=%22rome+map%22 </figcaption>
                     </figure>
             
                     <figure>
-                        <img id = "i2" src = "images/rome_map_2.jpeg" width = "200" alt = "Map portraying important attractions and landmarks as well as the layout of the city.">
-                        <figcaption id = "c2">Nested within the Tiber river, the seven hills of Rome both give rise to another nickname and mark the ancient boundaries of the city.  https://ontheworldmap.com/italy/city/rome/ </figcaption>
+                        <img class= "i2" src = "images/rome_map_2.jpeg" width = "200" alt = "Map portraying important attractions and landmarks as well as the layout of the city.">
+                        <figcaption class= "c2">Nested within the Tiber river, the seven hills of Rome both give rise to another nickname and mark the ancient boundaries of the city.  https://ontheworldmap.com/italy/city/rome/ </figcaption>
                     </figure>
                     
             
                     <figure>
-                        <img id = "i3" src = "images/rome_colosseum.jpeg" width = "200" alt = "Peaceful image of Roman Colosseum at sundown with blue skies and sun rays shining through the background.">
-                        <figcaption id = "c3">Built in 80 AD, the Colosseum was built as an amphitheater for entertainment, and hosted gladiatorial combat and animal fights for over 400 years. https://fullsuitcase.com/colosseum-rome-italy/ </figcaption>
+                        <img class= "i3" src = "images/rome_colosseum.jpeg" width = "200" alt = "Peaceful image of Roman Colosseum at sundown with blue skies and sun rays shining through the background.">
+                        <figcaption class= "c3">Built in 80 AD, the Colosseum was built as an amphitheater for entertainment, and hosted gladiatorial combat and animal fights for over 400 years. https://fullsuitcase.com/colosseum-rome-italy/ </figcaption>
                     </figure>
             
                     <figure>
-                        <img id = "i4" src = "images/rome_catacombs.jpeg" width = "200" alt = "Arched, partially lit underground tunnels comprise the Catacombs of Rome.">
-                        <figcaption id = "c4">Because of ancient Roman law dictating the deceased not to be buried within the city, the labyrinthian tunnels of the Catacombs of Rome stretch for over 12 miles outside city limits. https://www.tickets-rome.com/catacombs-tours/about/ </figcaption>
+                        <img class= "i4" src = "images/rome_catacombs.jpeg" width = "200" alt = "Arched, partially lit underground tunnels comprise the Catacombs of Rome.">
+                        <figcaption class= "c4">Because of ancient Roman law dictating the deceased not to be buried within the city, the labyrinthian tunnels of the Catacombs of Rome stretch for over 12 miles outside city limits. https://www.tickets-rome.com/catacombs-tours/about/ </figcaption>
                     </figure>
                     
                     <figure>
-                        <img id = "i5" src = "images/rome_pantheon.jpeg" width = "200" alt = "Painting of the interior of the Pantheon.">
-                        <figcaption id = "c5">The largest domed temple built in its time, the interior of the Pantheon is illuminated by natural light flowing through a circular oculus and features colored marble and vast columns. https://www.britannica.com/topic/Pantheon-building-Rome-Italy </figcaption>
+                        <img class= "i5" src = "images/rome_pantheon.jpeg" width = "200" alt = "Painting of the interior of the Pantheon.">
+                        <figcaption class= "c5">The largest domed temple built in its time, the interior of the Pantheon is illuminated by natural light flowing through a circular oculus and features colored marble and vast columns. https://www.britannica.com/topic/Pantheon-building-Rome-Italy </figcaption>
                     </figure>
                 </div>
                 

@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="images/iconImg.png" />
+    <link rel="icon" type="image/png" href="images/iconImg.png">
     <script src="https://kit.fontawesome.com/5dd540290c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -19,19 +19,21 @@
     <a href = "#main" id = "skip">  Skip to Main Content</a>
     <header> 
     <nav>
-        <ul>
-            <li id ="#head"><a href = "index.html">Home/Travel</a></li>
+        <div class="navbar">
+            <a href="index.html">Home/Travel</a>
+            <a href="pets.html">Pets</a>
             <div class="dropdown">
-                <button class="active">Recipes<a href = "recipe.html"></a></button>
-                <div class="dropdown-content">
-                    <a href="#cookies">Double Chocolate Cookies</a>
-                    <a href="#matcha">Matcha Cookies</a>
-                    <a href="#brownie">Mom's Brownie Recipe</a>
-                    <a href="#tikka">Homemade Chicken Tikka Masala</a>
-                </div>
-              </div>
-            <li id ="#head"><a href = "pets.html">Pets</a></li>
-        </ul>
+            <button class="active" onclick="myFunction()">Recipes
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#cookies">Double Chocolate Cookies</a>
+                <a href="#matcha">Matcha Cookies</a>
+                <a href="#brownie">Mom's Brownie Recipe</a>
+                <a href="#tikka">Homemade Chicken Tikka Masala</a>
+            </div>
+            </div> 
+        </div>
     </nav>
     </header>
     <button type = "button" onclick="topScroll()" id = "scrollButton" title = "Scroll to Top">Back to Top <i class='far fa-arrow-alt-circle-up'></i></button>

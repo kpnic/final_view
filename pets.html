@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="images/iconImg.png" />
+    <link rel="icon" type="image/png" href="images/iconImg.png">
     <script src="https://kit.fontawesome.com/5dd540290c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -21,22 +21,24 @@
     <a href = "#main" id = "skip">  Skip to Main Content</a>
     <header>
     <nav>
-        <ul class = "navBar">
-            <li id ="#head"><a href = "index.html">Home/Travel</a></li>
-            <li id ="#head"><a href = "recipe.html">Recipes</a></li>
+        <div class="navbar">
+            <a href="index.html">Home/Travel</a>
             <div class="dropdown">
-                <button class="active">Pets<a href = "pets.html"></a></button>
-                <div class="dropdown-content">
-                    <a href="#bacon">Bacon Q Dog</a>
-                    <a href="#luna">Luna the Chocolate Lab</a>
-                    <a href="#cheif">Cheif</a>
-                    <a href="#cheeto">Cheeto (Chicken)</a>
-                    <a href="#milktea">Milktea</a>
-                    <a href="#finn">Finn</a>
-                    <a href="#jax">Jax</a>
-                </div>
-              </div>
-        </ul>
+            <button class="active" onclick="myFunction()">Pets
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#bacon">Bacon Q Dog</a>
+                <a href="#luna">Luna the Chocolate Lab</a>
+                <a href="#cheif">Cheif</a>
+                <a href="#cheeto">Cheeto (Chicken)</a>
+                <a href="#milktea">Milktea</a>
+                <a href="#finn">Finn</a>
+                <a href="#jax">Jax</a>
+            </div>
+            </div> 
+            <a href="recipe.html">Recipes</a>
+        </div>
     </nav>
     </header>
     <button type = "button" onclick="topScroll()" id = "scrollButton" title = "Scroll to Top">Back to Top <i class='far fa-arrow-alt-circle-up'></i></button>
